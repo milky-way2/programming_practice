@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "MTRIX.C": "cpp",
+        "matrixeachrowsum.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
