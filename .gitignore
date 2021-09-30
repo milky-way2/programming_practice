@@ -1,2 +1,4 @@
 anylogfile.log
 abc.c
+*.log
+ignore/
