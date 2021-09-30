@@ -9,6 +9,7 @@ int main()
   scanf("%d",&number);    
  ans=factorial(number);   
   printf("Factorial of %d is: %d",number,ans);    
+  printf("By SOHAM CHAKRABORTTY");
 return 0;  
 }  
 int factorial(int n) 
