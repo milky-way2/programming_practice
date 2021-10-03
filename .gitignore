@@ -2,3 +2,6 @@ anylogfile.log
 abc.c
 *.log
 ignore/
+[B[B.pub
+[B[B
+*.pub
