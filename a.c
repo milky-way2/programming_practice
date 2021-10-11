@@ -8,7 +8,8 @@ int main()
  printf("Enter a number: ");    
   scanf("%d",&number);    
  ans=factorial(number);   
-  printf("Factorial of %d is: %d",number,ans);    
+  printf("Factorial of %d is: %d",number,ans); 
+  printf("\nBy Soham Chakrabortty");   
 return 0;  
 }  
 int factorial(int n) 
