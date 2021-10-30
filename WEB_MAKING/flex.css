@@ -1,0 +1,15 @@
+.main-container {
+    display: flex;
+    border:4px solid red;
+    padding:100px;
+    height:500px;
+    background-color:#94c694;
+}
+.main-container div {
+background-color: #94c694;
+border: 2px solid red;
+height:120px;
+width:1495px;
+padding: 50px;
+margin:10px;
+}
