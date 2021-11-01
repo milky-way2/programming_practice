@@ -1,0 +1,66 @@
+.login-page {
+    text-align: center;
+    color:aqua;
+    padding-top:30px;
+    margin-top:100px;
+}
+h1 {
+
+    font-family:-apple-system,Algerian, Helvetica, sans-serif;
+    border-radius: 50%;
+    border:5px dashed transparent;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+font-size:65px;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+    }
+  }
+h2 {
+    color:rgb(253 247 220);
+font-weight: bold;
+font-size: 25px;;
+}
+body {
+    background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+background-size: cover;
+  background-repeat: no-repeat;
+    opacity:1;
+}
+img {
+    height:300px;
+    margin-left:auto;
+    margin-right: auto;
+    width:50%;
+    display:block;
+    float:top;
+    border-radius: 25px;
+    border:2px dotted #85ecd0;
+}
+.flag {
+border-radius: 60px;
+border:2px dotted #85ecd0 transparent;
+margin-left: 400px;
+margin-right: 400px;
+margin-top:35px;
+display:block; 
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(157, 85, 129), 0 0 20px rgb(157, 85, 129), 0 0 25px rgb(157, 85, 129), 0 0 30px rgb(157, 85, 129), 0 0 35px rgb(157, 85, 129), 0 0 40px rgb(157, 85, 129);
+ animation: live 1s ease-in-out infinite alternate; 
+}
+@keyframes live {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(157, 85, 129), 0 0 20px rgb(157, 85, 129), 0 0 25px rgb(157, 85, 129), 0 0 30px rgb(157, 85, 129), 0 0 35px rgb(157, 85, 129), 0 0 40px rgb(157, 85, 129);
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(157, 85, 129), 0 0 40px rgb(157, 85, 129), 0 0 50px rgb(157, 85, 129), 0 0 60px rgb(157, 85, 129), 0 0 70px rgb(157, 85, 129), 0 0 80px rgb(157, 85, 129);
+    }
+    
+}
+em {
+    color:#fdb234;
+}

@@ -12,12 +12,27 @@ h1 {
   
   h3 {
     background-color: #00FF00;
+    color: black;
   }
   em1 {
     color:beige;
+    
   }
   em {
     background-color: #000000;
     color: #e90e0e;
   }
+  body {
+    background-image: url(https://wallpaperaccess.com/full/316894.jpg);
+   
+  }
+  p,
+  address,
+  ul,
+  p1,
+  h4 {
+    color: white;
+    font-size: bold;
+  }
+  
   
