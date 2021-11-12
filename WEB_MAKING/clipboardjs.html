@@ -1,0 +1,33 @@
+
+
+  <!--code to copy -->  
+  
+<input id="textCopyInput" type="text"  value="Hello World ">
+<button id="btnCopy" data-clipboard-action="copy" data-clipboard-target="#textCopyInput">Copy</button>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+
+<script>
+    let clipBoard1 = new ClipboardJS('#btnCopy'); 
+</script>
+<!--code to cut-->
+
+
+<input id="textCutInput" type="text"  value="Wellcome">
+<button id="btnCut" data-clipboard-action="cut" data-clipboard-target="#textCutInput">Cut</button>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+
+
+<script>
+    let clipBoard2 = new ClipboardJS('#btnCut'); 
+</script>
+<!--code to copy a specific text-->
+<button id="btnCopyFixed" data-clipboard-text="Just asample specific text 35523 @ #" >Copy specific text</button>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+<script>
+    let clipBoard3= new ClipboardJS('#btnCopyFixed')
+</script>
+
+
