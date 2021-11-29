@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-#define MAX 5
+#define size 5
+int ch;
 void insert();
 void delete();
 void display();
-int queue_array[MAX];
-int front= -1;
+int q[10];
+int front= 0;
 int rear= -1;
 
 int item;
 void main()
 {
-int choice;
 while (1)
 {
     printf("\n\n  1.insert element to stack \n");
@@ -20,8 +20,8 @@ while (1)
     printf("  3.Display all elements of stack \n");
     printf("  4.Quit\n");
      printf("Enter your choice : ");
-    scanf("%d",&choice);
-    switch (choice)
+    scanf("%d",&ch);
+    switch (ch)
     {
         case 1:
         insert();
@@ -46,7 +46,7 @@ void insert()
 {
     int item;
    
-    if(rear==MAX-1)
+    // if(rear==MAX-1)
     {
         if(front !=0)
         {
