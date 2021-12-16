@@ -13,5 +13,5 @@ int main()
 {
 	int n=3;              // n = no. of disk.
 	TOH(n,'A','B','C');    // fuction calling.
-	return(0);
+	return 0;
 }

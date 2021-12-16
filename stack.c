@@ -33,7 +33,7 @@ while (1)
         case 4:
         exit(1);
         default:
-        printf("Wrong choce  \n Try again : \n");
+        printf("!!!Wrong choce!!!  \n Try again  \n");
 
 
     }
@@ -67,7 +67,7 @@ void pop()
     }
     else
     {
-item=stack_array[top];
+ item=stack_array[top];
 printf("\n The deleted element is %d",stack_array[top]);
 top--;
     }
