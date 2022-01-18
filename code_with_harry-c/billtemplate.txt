@@ -1,0 +1,3 @@
+{{name}} Thank you . please visit again
+you perchase {{item}} thank you for vist our outlate {{outlate}}
+we wish that you will visit again soon...........

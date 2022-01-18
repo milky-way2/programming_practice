@@ -2,7 +2,9 @@
     "files.associations": {
         "MTRIX.C": "cpp",
         "matrixeachrowsum.C": "cpp",
-        "string.h": "c"
+        "string.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
