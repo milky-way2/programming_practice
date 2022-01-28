@@ -1,0 +1,1 @@
+{"name":"Local: p10","url":"c:\\Users\\SOHAM CHAKRABORTTY\\OneDrive\\Desktop\\PROGRAMMING\\cp\\p10.c","tests":[{"id":1643396839349,"input":"3\n10 20\n20 10\n10 10","output":"<\n>\n="}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\SOHAM CHAKRABORTTY\\OneDrive\\Desktop\\PROGRAMMING\\cp\\p10.c","group":"local","local":true}

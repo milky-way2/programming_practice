@@ -1,0 +1,1 @@
+{"name":"Local: p3","url":"c:\\Users\\SOHAM CHAKRABORTTY\\OneDrive\\Desktop\\PROGRAMMING\\cp\\p3.c","tests":[{"id":1643382727211,"input":"3\nB\nc\nD","output":"BattleShip\nCruiser\nDestroyer"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\SOHAM CHAKRABORTTY\\OneDrive\\Desktop\\PROGRAMMING\\cp\\p3.c","group":"local","local":true}

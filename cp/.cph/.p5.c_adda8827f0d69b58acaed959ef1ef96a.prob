@@ -1,0 +1,1 @@
+{"name":"Local: p5","url":"c:\\Users\\SOHAM CHAKRABORTTY\\OneDrive\\Desktop\\PROGRAMMING\\cp\\p5.c","tests":[{"id":1643385455972,"input":"3\n1 2\n100 200\n40 15","output":"1\n100\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\SOHAM CHAKRABORTTY\\OneDrive\\Desktop\\PROGRAMMING\\cp\\p5.c","group":"local","local":true}

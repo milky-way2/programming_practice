@@ -1,1 +1,2 @@
- printf("\n\n%d\n\n",sum);
+ resultstring[i] = '\0';
+        return resultstring;
