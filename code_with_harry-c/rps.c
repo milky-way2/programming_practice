@@ -14,7 +14,7 @@ int main()
     gets(name);
     printf("\n");
     int i = 0, com, usr, cp = 0, up = 0;
-    while (i < 3)
+    while (i < 5)
     {
         printf("\nPress \n'0' ROCK\n'1' PAPER\n'2' SCISSOR\n");
         printf("\n%s turns..........\n", name);
@@ -71,15 +71,15 @@ int main()
     printf("%s Total point = %d \t Computer Total point = %d\n", name, up, cp);
     if (cp > up)
     {
-        printf("\nYou lose..........!\n");
+        printf("\n\a\a\aYou lose..........!\a\a\a\n");
     }
     else if (cp == up)
     {
-        printf("\n........DRAW..............\n");
+        printf("\n\a\a\a........DRAW..............\a\a\a\n");
     }
     else if (up > cp)
     {
-        printf("\nYou win..........!\n");
+        printf("\n\a\a\aYou win..........!\a\a\a\n");
     }
 
     return 0;

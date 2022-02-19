@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
     n1 = atoi(argv[2]);
     n2 = atoi(argv[3]);
 
-    printf("n1 is ::: %d\n", n1);
-    printf("n2 is ::: %d\n", n2);
+    // printf("n1 is ::: %d\n", n1);
+    // printf("n2 is ::: %d\n", n2);
     if (strcmp(operation, "add") == 0)
     {
         printf("Answer of~~~~%s~~~~ is ::: %d\n", operation, (n1 + n2));
