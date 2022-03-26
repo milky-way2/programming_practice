@@ -7,13 +7,26 @@ struct Node
     struct Node *next; // self refferential structure
 };
 //Insert at begining
-struct Node* ib(struct Node* head)
+struct Node* ib(struct Node* head,int val)
 {
-    struct Node* ptr;
-    ptr=(struct Node*)malloc(sizeof(struct Node));
-    ptr->data=158;
-    ptr->next=head;
-    head=ptr;
+    // struct Node* ptr;
+    // ptr=(struct Node*)malloc(sizeof(struct Node));
+    // ptr->data=val;
+    // ptr->next=head;
+    // head=ptr;
+    // return head;
+        struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
+    ptr->data = val;
+ 
+    struct Node * p = head->next;
+    while(p->next != head){
+        p = p->next;
+    }
+    // At this point p points to the last node of this circular linked list
+ 
+    p->next = ptr;
+    ptr->next = head;
+    head = ptr;
     return head;
 }
 // insert at any index 
@@ -22,6 +35,12 @@ struct Node* ib(struct Node* head)
     struct Node *ptr=(struct Node*)malloc(sizeof(struct Node));
     int i=0;
     struct Node *p=head;
+    if(index==0)
+    {
+        head=ib(head,559);
+    }
+    else{
+        
     while(i !=index-1)
     {
         p=p->next;
@@ -30,6 +49,7 @@ struct Node* ib(struct Node* head)
     ptr->next=p->next;
     ptr->data=559;
     p->next=ptr;
+    }
     return head;
 }
 //insert at the end
@@ -38,13 +58,13 @@ struct Node* ie(struct Node* head)
     struct Node* ptr=(struct Node*)malloc(sizeof(struct Node));
     // int i=0;
     struct Node *p=head;
-    while(p->next !=NULL)
+    while(p->next !=head)
     {
         p=p->next;
     }
     p->next=ptr;
     ptr->data=779;
-    ptr->next=NULL;
+    ptr->next=head;
     return head;
 }
 //insert after a node
@@ -60,30 +80,39 @@ struct Node* ian(struct Node* head,struct Node*q)
 struct Node* dh(struct Node* head)
 {
     struct Node*p=head;
-    head=head->next;
-    free(p);
-    p=NULL;
+    struct Node*q=head;
+    while(p->next !=head)
+    {
+        p=p->next;
+    }
+    p->next=head->next;
+    head=q->next;
+    free(q);
+    q=NULL;
     return head;
 }
 //delete any node by index
 struct Node* di(struct Node*head,int index)
 {
     struct Node*p=head;
-    struct Node*q=head;
+    struct Node*q=head->next;
     int i=0,j=0;
+   
     while(i !=index-1)
     {
         p=p->next;
+        q=q->next;
         i++;
     }
-      while(j !=index)
+     if(q==head)
     {
-        q=q->next;
-        j++;
+        head=dh(head);
     }
+    else{
     p->next=q->next;
     free(q);
     q=NULL;
+    }
     return head;
 }
 //delete a node from end
@@ -91,12 +120,12 @@ struct Node* de(struct Node* head)
 {
     struct Node* p=head;
     struct Node* q=head->next;
-    while(p->next->next !=NULL)
+    while(p->next->next !=head)
     {
         p=p->next;
          q=q->next;
     }
-    p->next=NULL;
+    p->next=q->next;
     free(q);
     q=NULL;
     return head;
@@ -105,16 +134,19 @@ struct Node* de(struct Node* head)
 struct Node*dan(struct Node* head,struct Node* p)
 {
     struct Node* q;
-    if(p->next !=NULL){
-        q=p->next;
+    q=p->next;
+if(p->next==head)
+{
+    p->next=q->next;
+    head=p->next;
+}
+else{
+
     p->next=p->next->next;
+}
     free(q);
     q=NULL;
-    
-    }
-    else{
-        printf("Out of range.......NO delete occured\n");
-    }
+        // printf("Out of range.......NO delete occured\n");
     return head;
 }
 //delete by a value 
@@ -123,26 +155,33 @@ struct Node* dv(struct Node* head,int val)
     struct Node* p=head;
     struct Node* q=head->next;
 
-    while(q->data !=val && q->next !=NULL)
+    while(q->data !=val)
     {
         p=p->next;
         q=q->next;
     }
+    if(p->next==head)
+    {
+        p->next=q->next;
+        head=p->next;
+    }
+    else{
     p->next=q->next;
+    }
     free(q);
     q=NULL;
     return head;
 }
 // Travrsal of linkedlist
-void traversal(struct Node *ptr)
+void traversal(struct Node *head)
 {
     int i = 1;
-    while (ptr != NULL)
-    {
+    struct Node*ptr=head;
+    do{
         printf("%d) Element is %d\n", i, ptr->data);
         ptr = ptr->next;
         i++;
-    }
+    }while (ptr !=head);
 }
 int main()
 {
@@ -157,37 +196,35 @@ int main()
     third = (struct Node *)malloc(sizeof(struct Node));
     fourth = (struct Node *)malloc(sizeof(struct Node));
     // linking of  node
-    head->data = 147;
+    head->data = 4;
     head->next = second;
-    second->data = 126;
+    second->data = 3;
     second->next = third;
-    third->data = 149;
+    third->data = 6;
     third->next = fourth;
-    fourth->data = 175;
-    fourth->next = NULL; // terminating the linked list
+    fourth->data = 1;
+    fourth->next = head; // terminating the linked list
     // traversal function calling :print the linked list:
      printf("print the linked list:\n");
     traversal(head);
-    // head=ib(head);
     // printf("Linked list after insert a node\n");
-    // traversal(head);
-    // head=ibt(head,2);
+    // head=ib(head,158);
+    //  traversal(head);
+    // head=ibt(head,4);
     // traversal(head);
     // head=ie(head);
     // traversal(head);
     // head=ian(head,second);
     // traversal(head);
-    //  printf("Linked list after delete a node\n");
+     printf("Linked list after delete a node\n");
     // head=dh(head);
     // traversal(head);
-    // head=di(head,2);
+    // head=di(head,4);
     // traversal(head);
     // head=de(head);
     // traversal(head);
-    // head=dan(head,third);
+    // head=dan(head,second);
     // traversal(head);
-    // head=dv(head,149);
+//     head=dv(head,4);
 // traversal(head);
-
-
 }
