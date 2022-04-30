@@ -4,6 +4,7 @@ int main()
 {
     int arr[]={1,2,4,8,0,15,50};
     int s,check=0;
+    // s=50;
     printf("element : ");
     scanf("%d",&s);
     for(int i=0;i<(sizeof(arr)/sizeof(int));i++)

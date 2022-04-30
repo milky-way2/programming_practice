@@ -2,3 +2,7 @@ anylogfile.log
 abc.c
 *.log
 ignore/
+.cph/
+.vscode/
+cp/
+*.exe

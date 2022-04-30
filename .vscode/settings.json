@@ -4,7 +4,11 @@
         "matrixeachrowsum.C": "cpp",
         "string.h": "c",
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "malloc.h": "c",
+        "*.tcc": "cpp",
+        "iostream": "cpp",
+        "unordered_map": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

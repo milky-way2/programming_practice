@@ -1,5 +1,4 @@
-    //   printf("The sorted array is : ");
-    // for (int i = 0; i < n; i++)
+ // if(key==root->data)
     // {
-    //     printf("\t%d", arr[i]);
+    //     printf("\nNOT inserted %d...........\n",key);
     // }
