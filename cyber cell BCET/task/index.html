@@ -30,7 +30,7 @@
     <body>
         <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/04/1459870313PHP-logo.svg.png" alt="PHP logo" class="logo">
         <h1>"What is PHP"</h1>
-        <p>The term PHP is an acronym for PHP: Hypertext Preprocessor.<br>PHP is a server-side scripting language designed specifically for web development.<br>It is open-source which means it is free to download and use.<br>It is very simple to learn and use. The files have the extension “.php”. </p>
+        <p>The term PHP is an acronym for PHP: Hypertext Preprocessor.<br>PHP is a server-side scripting language designed specifically for web development.<br>It is open-source which means it is free to download and use.<br>It is very simple to learn and use. The files have the extension <a href="https://www.w3schools.com/php/default.asp">“.php”.</a></p>
         <br><br>
         <p1>Rasmus Lerdorf inspired the first version of PHP and participating in the later versions.<br>It is an interpreted language and it does not require a compiler.</p1>
         <br><br>
@@ -39,15 +39,15 @@
         <form method="get" action="abc.com/hello.php">
             
             <level type="username">Name</level>
-            <input type="text" value="Enter your Name...">
+            <input type="text" placeholder="Enter your Name...">
             <br><br>
             <level type="age">Age </level>
-            <input type="text" value="Enter your Age...">
+            <input type="text" placeholder="Enter your Age...">
             <br><br>
-            <input type="radio">
-            <level type="age">Male </level>
-            <input type="radio">
-            <level type="age">Female </level>
+            <input type="radio" id="male" name="gender">
+            <level type="age" for="male">Male </level>
+            <input type="radio" id="female" name="gender">
+            <level type="age" for="female">Female </level>
             <br><br>
        <button type="submit">Submit</button>
         </form>

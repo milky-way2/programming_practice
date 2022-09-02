@@ -1,13 +1,21 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+
 int main()
 {
-
-    long long t, k, n;
-   cin>>t;
-    while (t--)
+    int T,x,y;
+    scanf("%d",&T);
+    for(int i=0;i<T;i++)
     {
-        
+        scanf("%d%d",&x,&y);
+        x=x*107/100;
+        if(y<=x)
+        {
+            printf("YES\n");
+        }
+        else{
+            printf("NO\n");
+        }
     }
-        return 0;
-    }
+
+    return 0;
+}

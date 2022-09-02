@@ -1,9 +1,6 @@
 #include <stdio.h>
-// #include<time.h>
 int main()
 {
-    //  double time_use;
-    // clock_t tBeg=clock();
     int n;
     printf("\nEnter size of the array\n");
     scanf("%d", &n);
@@ -53,8 +50,5 @@ int main()
         flag = 1;
         printf("Item not found\n");
     }
-//     clock_t tEnd=clock();
-// time_use=((double) (tEnd-tBeg))/CLOCKS_PER_SEC;
-// printf("\nTotal time required:::->%f",time_use);
     return 0;
 }
